@@ -8,7 +8,9 @@ For use with **Godot 4.5.stable** and later.
 1. Copy the `dragonforge_curved_terrain_2d` folder from the `addons` folder into your project's `addons` folder.
 
 # Usage Instructions
-
+This plugin was inspired by these two videos. They deswcribe in detail how to modify curves to make this plugin work.
+- [How to make 2D Curved Terrain in Godot 4 - Tutorial](https://www.youtube.com/watch?v=7br07d1aoSo)
+- [Create a Custom 2D Curved Terrain Plugin in Godot 4.4](https://www.youtube.com/watch?v=CeGIlBKC_KU)
 ## Add a CurvedTerrain2D Node
 1. Add a new node as you would normally. (The **Create New Node** window will appear.)
 2. Type `curved` into the Search box.
