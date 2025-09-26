@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhwwkdugm7sn4"]
+
+[ext_resource type="Texture2D" uid="uid://by215txy8wa2s" path="res://example/coin.png" id="1_wcwec"]
+[ext_resource type="Script" uid="uid://kojtdyvay83u" path="res://addons/dragonforge_curved_terrain_2d/curved_terrain_2d.gd" id="2_ei00m"]
+[ext_resource type="Texture2D" uid="uid://csiqyphla8bac" path="res://example/fill.png" id="3_wcwec"]
+[ext_resource type="Texture2D" uid="uid://ohf8nkvg1cfp" path="res://example/edge.png" id="4_ei00m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d8bvm"]
+radius = 40.0
+
+[sub_resource type="Curve2D" id="Curve2D_n51mc"]
+bake_interval = 20.0
+_data = {
+"points": PackedVector2Array(14.343281, 34.833683, -14.343281, -34.833683, -216, -130, -21.173414, -95.62187, 21.173414, 95.62187, -62, -133, -136.60268, 61.471203, 136.60268, -61.471203, 258, -22, 0, 0, 0, 0, 341, 27, 25.271496, -21.173414, -25.271496, 21.173414, 165, 75, 2.7320535, 42.34683, -2.7320535, -42.34683, -195, 36, 53.275043, 64.88628, -53.275043, -64.88628, -224, -72)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_wcwec"]
+bake_interval = 20.0
+_data = {
+"points": PackedVector2Array(-44.39587, 121.57638, 44.39587, -121.57638, -92, -157, 0, 0, 0, 0, 0, -174, -37.255276, -59.60844, 37.255276, 59.60844, 45, -60, -17.385796, 4.96737, 17.385796, -4.96737, 289, -124, -35.392513, -49.05278, 35.392513, 49.05278, 351, -193, 76.373314, 14.90211, -76.373314, -14.90211, 233, -4, 0, 0, 0, 0, -87, -4, -56.007095, 53.275043, 56.007095, -53.275043, -100, -109)
+}
+point_count = 8
+
+[sub_resource type="Curve2D" id="Curve2D_7cn0y"]
+bake_interval = 20.0
+_data = {
+"points": PackedVector2Array(25.271496, -11.045052, -25.271496, 11.045052, 193, -226, -3.1544447, -4.55642, 3.1544447, 4.55642, 217, -254, -10.164322, 0.7009877, 10.164322, -0.7009877, 397, -252, 0.7009877, -5.2574077, -0.7009877, 5.2574077, 428, -219, 5.2574077, -14.370248, -5.2574077, 14.370248, 426, -125, 6.6593833, 0.35049385, -6.6593833, -0.35049385, 403, -102, 3.415067, 3.415067, -3.415067, -3.415067, 221, -105, -2.04904, 6.830134, 2.04904, -6.830134, 199, -128, 0, 0, 0, 0, 193, -205)
+}
+point_count = 9
+
+[node name="Example" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Coin" type="RigidBody2D" parent="."]
+position = Vector2(-403, -241)
+collision_layer = 0
+mass = 3.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin"]
+shape = SubResource("CircleShape2D_d8bvm")
+
+[node name="Sprite2D" type="Sprite2D" parent="Coin"]
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("1_wcwec")
+
+[node name="CurvedTerrain" type="Path2D" parent="."]
+texture_filter = 1
+position = Vector2(-314, 13)
+curve = SubResource("Curve2D_n51mc")
+script = ExtResource("2_ei00m")
+fill_texture = ExtResource("3_wcwec")
+edge_texture = ExtResource("4_ei00m")
+metadata/_custom_type_script = "uid://kojtdyvay83u"
+
+[node name="CurvedTerrain2" type="Path2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 308)
+curve = SubResource("Curve2D_wcwec")
+script = ExtResource("2_ei00m")
+fill_texture = ExtResource("3_wcwec")
+edge_texture = ExtResource("4_ei00m")
+metadata/_custom_type_script = "uid://kojtdyvay83u"
+
+[node name="CurvedTerrain3" type="Path2D" parent="."]
+texture_filter = 1
+position = Vector2(13, 8)
+curve = SubResource("Curve2D_7cn0y")
+script = ExtResource("2_ei00m")
+fill_texture = ExtResource("3_wcwec")
+edge_texture = ExtResource("4_ei00m")
+metadata/_custom_type_script = "uid://kojtdyvay83u"

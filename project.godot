@@ -1,0 +1,18 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Dragonforge Curved Terrain 2D v1.0"
+config/description="Plugin that adds a CurvedTerrain2D node that can be used to create curved 2D terrains."
+config/version="1.0"
+run/main_scene="uid://bhwwkdugm7sn4"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="uid://452aukhxkrx0"
