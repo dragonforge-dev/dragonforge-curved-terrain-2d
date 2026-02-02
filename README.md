@@ -1,12 +1,12 @@
-[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 [![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-curved-terrain-2d?logo=mit)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/blob/main/LICENSE)
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-curved-terrain-2d/latest)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)
 
 # Dragonforge Curved Terrain 2D <img src="curved_terrain_icon.png" width="32" alt="Curved Terrain Icon"/>
 Plugin that adds a **CurvedTerrain2D** node that can be used to create curved 2D terrains.
-# Version 1.0
-For use with **Godot 4.5.stable** and later.
+# Version 1.1
+For use with **Godot 4.6.stable** and later.
 # Installation Instructions
 1. Copy the `dragonforge_curved_terrain_2d` folder from the `addons` folder into your project's `addons` folder.
 

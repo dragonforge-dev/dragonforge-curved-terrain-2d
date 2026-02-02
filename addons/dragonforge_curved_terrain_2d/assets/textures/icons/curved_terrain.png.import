@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://452aukhxkrx0"
-path="res://.godot/imported/curved_terrain_icon.png-0f4eebac0408ea01bb2626a48ba1e322.ctex"
+uid="uid://b15ar0hnhr7bj"
+path="res://.godot/imported/curved_terrain.png-f736fbe22ac5ecbd4c19799a57576982.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://curved_terrain_icon.png"
-dest_files=["res://.godot/imported/curved_terrain_icon.png-0f4eebac0408ea01bb2626a48ba1e322.ctex"]
+source_file="res://addons/dragonforge_curved_terrain_2d/assets/textures/icons/curved_terrain.png"
+dest_files=["res://.godot/imported/curved_terrain.png-f736fbe22ac5ecbd4c19799a57576982.ctex"]
 
 [params]
 

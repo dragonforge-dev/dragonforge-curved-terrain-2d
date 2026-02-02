@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bhwwkdugm7sn4"]
+[gd_scene format=3 uid="uid://bhwwkdugm7sn4"]
 
 [ext_resource type="Texture2D" uid="uid://by215txy8wa2s" path="res://example/coin.png" id="1_wcwec"]
 [ext_resource type="Script" uid="uid://kojtdyvay83u" path="res://addons/dragonforge_curved_terrain_2d/curved_terrain_2d.gd" id="2_ei00m"]
@@ -29,23 +29,23 @@ _data = {
 }
 point_count = 9
 
-[node name="Example" type="Node2D"]
+[node name="Example" type="Node2D" unique_id=805579612]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=394116654]
 
-[node name="Coin" type="RigidBody2D" parent="."]
+[node name="Coin" type="RigidBody2D" parent="." unique_id=1244576399]
 position = Vector2(-403, -241)
 collision_layer = 0
 mass = 3.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin" unique_id=22123280]
 shape = SubResource("CircleShape2D_d8bvm")
 
-[node name="Sprite2D" type="Sprite2D" parent="Coin"]
+[node name="Sprite2D" type="Sprite2D" parent="Coin" unique_id=1419244601]
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("1_wcwec")
 
-[node name="CurvedTerrain" type="Path2D" parent="."]
+[node name="CurvedTerrain" type="Path2D" parent="." unique_id=1573693864]
 texture_filter = 1
 position = Vector2(-314, 13)
 curve = SubResource("Curve2D_n51mc")
@@ -54,7 +54,7 @@ fill_texture = ExtResource("3_wcwec")
 edge_texture = ExtResource("4_ei00m")
 metadata/_custom_type_script = "uid://kojtdyvay83u"
 
-[node name="CurvedTerrain2" type="Path2D" parent="."]
+[node name="CurvedTerrain2" type="Path2D" parent="." unique_id=1582470321]
 texture_filter = 1
 position = Vector2(80, 308)
 curve = SubResource("Curve2D_wcwec")
@@ -63,7 +63,7 @@ fill_texture = ExtResource("3_wcwec")
 edge_texture = ExtResource("4_ei00m")
 metadata/_custom_type_script = "uid://kojtdyvay83u"
 
-[node name="CurvedTerrain3" type="Path2D" parent="."]
+[node name="CurvedTerrain3" type="Path2D" parent="." unique_id=80726215]
 texture_filter = 1
 position = Vector2(13, 8)
 curve = SubResource("Curve2D_7cn0y")

@@ -1,4 +1,7 @@
+@icon("res://addons/dragonforge_curved_terrain_2d/assets/textures/icons/curved_terrain.png")
 @tool
+## Creates curved terrain by using a tile for the fill of terrain, and a tile for the edge of the 
+## terrain. Also allows the setting of collision information so that objects can interact with it.
 class_name CurvedTerrain2D extends Path2D
 
 ## The image to fill the inside
