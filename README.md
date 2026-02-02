@@ -3,7 +3,7 @@
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-curved-terrain-2d/latest)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)
 
-# Dragonforge Curved Terrain 2D <img src="curved_terrain_icon.png" width="32" alt="Curved Terrain Icon"/>
+# Dragonforge Curved Terrain 2D <img src="/addons/dragonforge_curved_terrain_2d/assets/textures/icons/curved_terrain.png" width="32" alt="Curved Terrain Icon"/>
 Plugin that adds a **CurvedTerrain2D** node that can be used to create curved 2D terrains.
 # Version 1.1
 For use with **Godot 4.6.stable** and later.
@@ -28,7 +28,7 @@ This plugin was inspired by these two videos. They deswcribe in detail how to mo
 5. Set the collision layers and masks. Typically terrain only neds to be on a layer and needs no masks. (For consistency the defaults match typical Godot defaults.)
 
 # Class Descriptions
-## CurvedTerrain2D <img src="curved_terrain_icon.png" width="32" alt="Curved Terrain Icon"/>
+## CurvedTerrain2D <img src="/addons/dragonforge_curved_terrain_2d/assets/textures/icons/curved_terrain.png" width="32" alt="Curved Terrain Icon"/>
 
 ### Export Variables
 - `fill_texture: Texture2D` The image to fill the inside
