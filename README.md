@@ -3,7 +3,8 @@
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-curved-terrain-2d/latest)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)
 
-# Dragonforge Curved Terrain 2D <img src="curved_terrain_icon.png" width="32" alt="Curved Terrain Icon"/>
+<<<<<<< HEAD
+# Dragonforge Curved Terrain 2D <img src="/addons/dragonforge_curved_terrain_2d/assets/textures/icons/curved_terrain.png" width="32" alt="Curved Terrain Icon"/>
 Plugin which adds a **CurvedTerrain2D** node that can be used to create curved 2D terrains.
 
 <img src="/assets/textures/docs/test_scene.png" alt="Curved Terrain Test Scene"/>
@@ -35,7 +36,7 @@ This plugin was inspired by these two videos. They describe in detail how to mod
 <img src="/assets/textures/docs/curved_terrain_2d_inspector.png" alt="Curved Terrain Inspector View"/>
 
 # Class Descriptions
-## CurvedTerrain2D <img src="curved_terrain_icon.png" width="32" alt="Curved Terrain Icon"/>
+## CurvedTerrain2D <img src="/addons/dragonforge_curved_terrain_2d/assets/textures/icons/curved_terrain.png" width="32" alt="Curved Terrain Icon"/>
 
 ### Export Variables
 - `fill_texture: Texture2D` The image to fill the inside
