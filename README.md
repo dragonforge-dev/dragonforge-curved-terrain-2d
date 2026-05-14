@@ -3,7 +3,6 @@
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-curved-terrain-2d/latest)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)
 
-<<<<<<< HEAD
 # Dragonforge Curved Terrain 2D <img src="/addons/dragonforge_curved_terrain_2d/assets/textures/icons/curved_terrain.png" width="32" alt="Curved Terrain Icon"/>
 Plugin which adds a **CurvedTerrain2D** node that can be used to create curved 2D terrains.
 
