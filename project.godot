@@ -14,9 +14,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Dragonforge Curved Terrain 2D v1.1"
+config/name="Dragonforge Curved Terrain 2D v1.2"
 config/description="Plugin that adds a CurvedTerrain2D node that can be used to create curved 2D terrains."
-config/version="1.1"
+config/version="1.2"
 run/main_scene="uid://bhwwkdugm7sn4"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://b15ar0hnhr7bj"

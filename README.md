@@ -1,22 +1,26 @@
-[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.2.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 [![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-curved-terrain-2d?logo=mit)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/blob/main/LICENSE)
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-curved-terrain-2d/latest)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)
 
 # Dragonforge Curved Terrain 2D <img src="curved_terrain_icon.png" width="32" alt="Curved Terrain Icon"/>
-Plugin that adds a **CurvedTerrain2D** node that can be used to create curved 2D terrains.
-# Version 1.1
-For use with **Godot 4.6.stable** and later.
+Plugin which adds a **CurvedTerrain2D** node that can be used to create curved 2D terrains.
+
+<img src="/assets/textures/docs/test_scene.png" alt="Curved Terrain Test Scene"/>
+
+# Version 1.2
+For use with **Godot 4.6.2.stable** and later.
 # Installation Instructions
 1. Copy the `dragonforge_curved_terrain_2d` folder from the `addons` folder into your project's `addons` folder.
 
 # Usage Instructions
-This plugin was inspired by these two videos. They deswcribe in detail how to modify curves to make this plugin work.
+This plugin was inspired by these two videos. They describe in detail how to modify curves to make this plugin work.
 - [How to make 2D Curved Terrain in Godot 4 - Tutorial](https://www.youtube.com/watch?v=7br07d1aoSo)
 - [Create a Custom 2D Curved Terrain Plugin in Godot 4.4](https://www.youtube.com/watch?v=CeGIlBKC_KU)
 ## Add a CurvedTerrain2D Node
 1. Add a new node as you would normally. (The **Create New Node** window will appear.)
 2. Type `curved` into the Search box.
+<img src="/assets/textures/docs/add_curved_terrain_2d.png" alt="Add Curved Terrain Dialog"/>
 3. Select **CurvedTerrain2D**.
 4. Click the **Create** button.
 
@@ -24,8 +28,11 @@ This plugin was inspired by these two videos. They deswcribe in detail how to mo
 1. Drag-and-drop a texture into **Fill Texture**. If you're using a tileset, pick the center tile.
 2. Drag-and-drop a texture into **Edge Texture**. If you're using a tileset, use the top center tile.
 3. Click on the **CurvedTerrain2D** node and use the **Curve Toolbar** at the top of the screen to create and edit points for your terrain.
+<img src="/assets/textures/docs/editing_curve.png" alt="Editing the curve."/>
 4. Adjust the **Edge Depth** to alter the look of the edge.
 5. Set the collision layers and masks. Typically terrain only neds to be on a layer and needs no masks. (For consistency the defaults match typical Godot defaults.)
+
+<img src="/assets/textures/docs/curved_terrain_2d_inspector.png" alt="Curved Terrain Inspector View"/>
 
 # Class Descriptions
 ## CurvedTerrain2D <img src="curved_terrain_icon.png" width="32" alt="Curved Terrain Icon"/>

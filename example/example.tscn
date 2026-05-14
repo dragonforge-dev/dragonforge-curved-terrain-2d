@@ -1,9 +1,24 @@
 [gd_scene format=3 uid="uid://bhwwkdugm7sn4"]
 
+[ext_resource type="Shader" uid="uid://bm3njo1c3xdkm" path="res://assets/shaders/cloudy_sky.gdshader" id="1_scst5"]
 [ext_resource type="Texture2D" uid="uid://by215txy8wa2s" path="res://example/coin.png" id="1_wcwec"]
 [ext_resource type="Script" uid="uid://kojtdyvay83u" path="res://addons/dragonforge_curved_terrain_2d/curved_terrain_2d.gd" id="2_ei00m"]
 [ext_resource type="Texture2D" uid="uid://csiqyphla8bac" path="res://example/fill.png" id="3_wcwec"]
 [ext_resource type="Texture2D" uid="uid://ohf8nkvg1cfp" path="res://example/edge.png" id="4_ei00m"]
+[ext_resource type="Script" uid="uid://bcdedrlm2e4qm" path="res://example/restart_button.gd" id="6_wmyp6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wmyp6"]
+shader = ExtResource("1_scst5")
+shader_parameter/cloudscale = 1.1
+shader_parameter/speed = 0.01
+shader_parameter/clouddark = 0.5
+shader_parameter/cloudlight = 0.3
+shader_parameter/cloudcover = 0.2
+shader_parameter/cloudalpha = 8.0
+shader_parameter/skytint = 0.5
+shader_parameter/skycolour1 = Vector3(0.2, 0.4, 0.6)
+shader_parameter/skycolour2 = Vector3(0.4, 0.7, 1)
+shader_parameter/m = Transform2D(1.6, -1.2, 1.2, 1.6, 0, 0)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d8bvm"]
 radius = 40.0
@@ -30,6 +45,11 @@ _data = {
 point_count = 9
 
 [node name="Example" type="Node2D" unique_id=805579612]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1893594098]
+material = SubResource("ShaderMaterial_wmyp6")
+scale = Vector2(9, 5.1)
+texture = ExtResource("4_ei00m")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=394116654]
 
@@ -71,3 +91,13 @@ script = ExtResource("2_ei00m")
 fill_texture = ExtResource("3_wcwec")
 edge_texture = ExtResource("4_ei00m")
 metadata/_custom_type_script = "uid://kojtdyvay83u"
+
+[node name="Button" type="Button" parent="." unique_id=1654573747]
+offset_left = 297.0
+offset_top = -201.0
+offset_right = 362.0
+offset_bottom = -147.0
+size_flags_horizontal = 8
+text = "Restart
+Scene"
+script = ExtResource("6_wmyp6")
